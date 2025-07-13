@@ -53,8 +53,12 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-2 space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold font-poppins text-primary mb-4">
+              <div className="relative">
+                <div 
+                  className="absolute inset-0 bg-contain bg-no-repeat bg-left opacity-10 -z-10"
+                  style={{ backgroundImage: "url('/lovable-uploads/4ac5daaf-e1d3-4461-853e-4cc7ead1d5f4.png')" }}
+                />
+                <h3 className="text-2xl font-bold font-poppins text-primary mb-4 relative z-10 px-4 py-2">
                   SNR English Class
                 </h3>
                 <p className="text-muted-foreground font-inter leading-relaxed max-w-md">
