@@ -19,21 +19,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 relative">
-            <div 
-              className="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-10 -z-10"
-              style={{ backgroundImage: "url('/lovable-uploads/4ac5daaf-e1d3-4461-853e-4cc7ead1d5f4.png')" }}
-            />
-            <div className="flex items-center gap-2 relative z-10 px-4 py-2">
-              <img 
-                src="/lovable-uploads/578acfc1-3cb1-4a1a-9bd0-be2393d6d583.png" 
-                alt="SNR Logo" 
-                className="h-8 w-auto"
-              />
-              <h1 className="text-2xl font-bold font-poppins text-primary">
-                English Class
-              </h1>
-            </div>
+          <div className="flex-shrink-0">
+            <h1 className="text-2xl font-bold font-poppins text-primary">
+              SNR English Class
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
