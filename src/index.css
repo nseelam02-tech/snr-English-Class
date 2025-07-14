@@ -8,32 +8,32 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* SNR English Class Design System */
+    /* SNR English Class Design System - Yellow Brand Theme */
     --background: 0 0% 99%;
-    --foreground: 222.2 84% 7%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 7%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 7%;
+    --popover-foreground: 0 0% 9%;
 
-    /* Primary Blue - Professional Learning */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
+    /* Primary Yellow - Brand Color */
+    --primary: 48 89% 60%;
+    --primary-foreground: 0 0% 9%;
+    --primary-hover: 48 89% 55%;
 
-    /* Secondary - Soft Gray */
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 222.2 84% 7%;
+    /* Secondary - Dark Contrast */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted - Light Background */
-    --muted: 210 40% 97%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 48 30% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent - Learning Highlight */
-    --accent: 45 93% 58%;
-    --accent-foreground: 222.2 84% 7%;
+    /* Accent - Bright Yellow Highlight */
+    --accent: 48 98% 65%;
+    --accent-foreground: 0 0% 9%;
 
     /* Success - Achievement Green */
     --success: 142 76% 36%;
@@ -46,9 +46,9 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 217 91% 60%;
+    --border: 48 20% 88%;
+    --input: 48 20% 88%;
+    --ring: 48 89% 60%;
 
     --radius: 0.5rem;
 
