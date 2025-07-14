@@ -16,10 +16,10 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins text-foreground leading-tight">
-            Learn English{" "}
-            <span className="text-primary">Confidently</span>,{" "}
-            <span className="text-accent">Every Day</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-oswald text-secondary leading-tight tracking-wider">
+            LEARN ENGLISH{" "}
+            <span className="text-primary">CONFIDENTLY</span>,{" "}
+            <span className="text-accent-foreground">EVERY DAY</span>
           </h1>
 
           {/* Subtext */}

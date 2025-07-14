@@ -29,19 +29,19 @@ const Footer = () => {
       name: "YouTube",
       href: "#youtube",
       icon: Youtube,
-      color: "hover:text-red-500"
+      color: "text-social-youtube"
     },
     {
       name: "Instagram",
       href: "#instagram",
       icon: Instagram,
-      color: "hover:text-pink-500"
+      color: "text-social-instagram"
     },
     {
       name: "Email",
       href: "mailto:hello@snrenglishclass.com",
       icon: Mail,
-      color: "hover:text-blue-500"
+      color: "text-social-email"
     }
   ];
 
@@ -54,8 +54,8 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-2 space-y-6">
               <div>
-                <h3 className="text-2xl font-bold font-poppins text-primary mb-4">
-                  SNR English Class
+                <h3 className="text-2xl font-black font-oswald text-secondary tracking-wider mb-4">
+                  SNR ENGLISH CLASS
                 </h3>
                 <p className="text-muted-foreground font-inter leading-relaxed max-w-md">
                   Learn English confidently with our comprehensive courses, interactive quizzes, 
@@ -73,7 +73,7 @@ const Footer = () => {
                     <a
                       key={social.name}
                       href={social.href}
-                      className={`p-3 rounded-lg bg-secondary text-muted-foreground transition-all duration-200 ${social.color} hover:bg-primary hover:text-primary-foreground`}
+                      className={`p-3 rounded-lg bg-muted text-muted-foreground transition-all duration-200 hover:bg-background hover:scale-110 ${social.color}`}
                       aria-label={social.name}
                     >
                       <social.icon size={20} />

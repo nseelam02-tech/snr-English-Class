@@ -20,8 +20,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold font-poppins text-primary">
-              SNR English Class
+            <h1 className="text-2xl font-black font-oswald text-secondary tracking-wider">
+              SNR ENGLISH CLASS
             </h1>
           </div>
 
