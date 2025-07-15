@@ -29,13 +29,13 @@ const BlogSection = () => {
     }
   ];
 
-  const getCategoryColor = (category: string) => {
+  const getCategoryColor = (category) => {
     const colors = {
       Vocabulary: "bg-accent/10 text-accent",
       Grammar: "bg-primary/10 text-primary",
       Business: "bg-success/10 text-success"
     };
-    return colors[category as keyof typeof colors] || "bg-muted text-muted-foreground";
+    return colors[category] || "bg-muted text-muted-foreground";
   };
 
   return (
