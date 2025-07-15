@@ -1,17 +1,19 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Courses", href: "#courses" },
-    { name: "Quiz", href: "#quiz" },
-    { name: "Blog", href: "#blog" },
-    { name: "Resources", href: "#resources" },
-    { name: "Contact", href: "#contact" }
+    { name: "Home", href: "/" },
+    { name: "Courses", href: "/courses" },
+    { name: "Quiz", href: "/quiz" },
+    { name: "Blog", href: "/blog" },
+    { name: "Resources", href: "/resources" },
+    { name: "Contact", href: "/contact" }
   ];
 
   return (
@@ -29,14 +31,18 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  to={link.href}
+                  className={`transition-colors duration-200 font-medium ${
+                    location.pathname === link.href 
+                      ? "text-primary font-semibold" 
+                      : "text-foreground hover:text-primary"
+                  }`}
                   role="menuitem"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -66,15 +72,19 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  to={link.href}
+                  className={`block px-3 py-2 transition-colors duration-200 font-medium ${
+                    location.pathname === link.href 
+                      ? "text-primary font-semibold" 
+                      : "text-foreground hover:text-primary"
+                  }`}
                   role="menuitem"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-4">
                 <Button variant="hero" size="default" className="w-full">
