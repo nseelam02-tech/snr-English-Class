@@ -10,12 +10,12 @@ const ContactForm = () => {
     message: "",
     subscribe: false
   });
-  const [errors, setErrors] = useState<{[key: string]: string}>({});
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const validateForm = () => {
-    const newErrors: {[key: string]: string} = {};
+    const newErrors = {};
 
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
@@ -37,7 +37,7 @@ const ContactForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!validateForm()) return;
@@ -61,11 +61,11 @@ const ContactForm = () => {
     }, 1000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     const { name, value, type } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
+      [name]: type === 'checkbox' ? e.target.checked : value
     }));
     
     // Clear error when user starts typing
