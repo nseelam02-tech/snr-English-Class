@@ -1,4 +1,5 @@
 import { BookOpen, MessageSquare, Mic, Globe, Briefcase, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CategoryGrid = () => {
   const categories = [
@@ -6,37 +7,43 @@ const CategoryGrid = () => {
       icon: BookOpen,
       name: "Grammar",
       description: "Master sentence structure",
-      color: "text-primary"
+      color: "text-primary",
+      link: "/grammar"
     },
     {
       icon: MessageSquare,
       name: "Vocabulary",
       description: "Expand your word power",
-      color: "text-accent"
+      color: "text-accent",
+      link: "/vocabulary"
     },
     {
       icon: Mic,
       name: "Speaking",
       description: "Practice real conversations",
-      color: "text-success"
+      color: "text-success",
+      link: "/speaking"
     },
     {
       icon: Globe,
       name: "Pronunciation",
       description: "Sound clear & natural",
-      color: "text-warning"
+      color: "text-warning",
+      link: "/pronunciation"
     },
     {
       icon: Briefcase,
       name: "Business English",
       description: "Write & speak professionally",
-      color: "text-primary"
+      color: "text-primary",
+      link: "/business"
     },
     {
       icon: GraduationCap,
       name: "Exam Prep",
       description: "Ace IELTS & TOEFL",
-      color: "text-accent"
+      color: "text-accent",
+      link: "/exam-prep"
     }
   ];
 
@@ -54,9 +61,10 @@ const CategoryGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div
+            <Link
               key={index}
-              className="group p-8 bg-card rounded-2xl border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+              to={category.link}
+              className="group p-8 bg-card rounded-2xl border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block"
             >
               <div className="text-center space-y-6">
                 <div className={`inline-flex p-4 rounded-full bg-secondary ${category.color}`}>
@@ -72,7 +80,7 @@ const CategoryGrid = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
