@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+#Welcome to your SNR English Class Application 🚀
+📚 Project Info
+Live URL: https://lovable.dev/projects/94a6310e-88e6-4b7c-a588-b23ced4cc412
+(Custom domain coming soon...)
 
-## Project info
+🛠️ How to Edit This Code
+You can work on this project using any of the methods below:
 
-**URL**: https://lovable.dev/projects/94a6310e-88e6-4b7c-a588-b23ced4cc412
+1. Use Your Favorite Code Editor (Recommended 💻)
+If you prefer working locally using VS Code or another IDE, follow these steps:
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/94a6310e-88e6-4b7c-a588-b23ced4cc412) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+bash
+Copy
+Edit
+# Step 1: Clone the repository using your Git URL
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Move into the project directory
+cd snr-english-class
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install all dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the local development server
 npm run dev
-```
+Make sure you have Node.js and npm installed.
+Use nvm for easy Node version management.
 
-**Edit a file directly in GitHub**
+2. Edit Directly in GitHub ✏️
+Go to the file you want to edit in your repo.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Click the pencil icon at the top right.
 
-**Use GitHub Codespaces**
+Make your changes and commit them.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. Use GitHub Codespaces ⚡
+Click the green “Code” button in your GitHub repo.
 
-## What technologies are used for this project?
+Go to the Codespaces tab.
 
-This project is built with:
+Click “New codespace” to spin up a full dev environment in the cloud.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🧪 Tech Stack
+This project is powered by a modern front-end stack:
 
-## How can I deploy this project?
+⚡ Vite – for superfast builds
 
-Simply open [Lovable](https://lovable.dev/projects/94a6310e-88e6-4b7c-a588-b23ced4cc412) and click on Share -> Publish.
+🧠 TypeScript – for type safety
 
-## Can I connect a custom domain to my Lovable project?
+⚛️ React – for component-based UI
 
-Yes, you can!
+💅 Tailwind CSS – for utility-first styling
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎨 shadcn/ui – for beautifully designed, accessible UI components
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🚀 Deployment
+To deploy your app:
+
+Push your latest changes to the main branch.
+
+Open the deployed link.
+
+Publish via your hosting platform (or connect a custom domain — see below).
+
+🌐 Connect a Custom Domain
+You can attach your own domain to this project by:
+
+Going to your project settings on your hosting platform.
+
+Navigating to Domains.
+
+Clicking Connect Domain and following the steps.
+
+For more help, refer to your hosting provider's custom domain guide (if still hosted on Lovable) — or configure via Netlify/Vercel if migrating.
