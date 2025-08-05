@@ -54,7 +54,7 @@ This project is powered by a modern front-end stack:
 
 🎨 shadcn/ui – for beautifully designed, accessible UI components
 
-🚀 Deployment
+# 🚀 Deployment
 To deploy your app:
 
 Push your latest changes to the main branch.
@@ -70,6 +70,3 @@ Going to your project settings on your hosting platform.
 
 Navigating to Domains.
 
-Clicking Connect Domain and following the steps.
-
-For more help, refer to your hosting provider's custom domain guide (if still hosted on Lovable) — or configure via Netlify/Vercel if migrating.
