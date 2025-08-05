@@ -1,4 +1,4 @@
-#Welcome to your SNR English Class Application 🚀
+Welcome to your SNR English Class Application 🚀
 📚 Project Info
 Live URL: https://lovable.dev/projects/94a6310e-88e6-4b7c-a588-b23ced4cc412
 (Custom domain coming soon...)
